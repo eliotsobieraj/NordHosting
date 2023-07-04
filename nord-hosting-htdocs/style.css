@@ -1,0 +1,254 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    background-color: #f5F5F5;
+    width: 100%;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F5F5F5;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    height: 100px;
+    margin: 0;
+    width: 100vw;
+}
+
+nav li {
+    padding: 3vh;
+    align-self: center;
+    margin-right: 10vh;
+    cursor: pointer;
+}
+
+nav ul {
+    display: inline-block;
+}
+
+.link li {
+    display: inline-block;
+    padding: 0 4vh;
+    position: relative;
+}
+
+.link li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+.link li button.bouton_menu {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+.link li .bouton_contact_div {
+    padding: 0;
+    background: linear-gradient(to right, #0000B8, #8d32f4);
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    display: inline-block;
+    font-family: Roboto, sans-serif;
+}
+
+.link li .bouton_contact {
+    width: 120px;
+    height: 40px;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.link li:hover ul {
+    display: block;
+}
+
+.link li ul li {
+    display: block;
+    flex-direction: column;
+}
+
+.menu li {
+    padding: 3vh 7vh;
+    background-color: white;
+    align-self: center;
+    border: none;
+}
+
+.menu_contact {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.bouton_menu_contact:focus + .menu_contact {
+    display: block;
+}
+
+
+
+article {
+    margin-top: 100px;
+    border-radius: 5px;
+    display: flex;
+}
+
+article h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    color: darkgrey;
+    font-weight: 300;
+}
+
+article button.Commencer{
+    font-size: 14px;
+    background: linear-gradient(to right, #0000B8, #8d32f4);
+    color: white;
+    border: none;
+    height: 40px;
+    width: 160px;
+    border-radius: 5px;
+    font-weight: 300;
+    font-family: Roboto,sans-serif;
+    cursor: pointer;
+}
+article button.ESP{
+    font-size: 14px;
+    font-weight: 400;
+    height: 40px;
+    color: grey;
+    font-family: Roboto, sans-serif;
+    width: 160px;
+    border-radius: 5px;
+    margin-left: 20px;
+    background: #F5F5F5;
+    cursor: pointer;
+    border: 2px solid #f0f0f0;
+
+}
+
+.elements button {
+    padding: 1.5vh 3vh;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10vh;
+    background: linear-gradient(to bottom, #4286f4, #8d32f4);
+    width: 100%;
+
+}
+
+.Contact {
+    text-align: center;
+    width: 100%;
+    padding: 3vh;
+    margin-right: auto;
+    margin-left: 0;
+    float: left;
+    background: linear-gradient(to bottom, #4286f4, #8d32f4);
+  }
+
+.Contact h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.Contact ul {
+    list-style-type: none;
+    margin-bottom: 3vh;
+}
+
+.Contact ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.Contact ul li img {
+    margin-right: 10px;
+}
+
+.Contact button.bouton_menu_contact {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.Contact .menu_contact {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.Contact button.bouton_menu_contact:focus + .menu_contact {
+    display: block;
+}
+
+footer {
+    background: linear-gradient(to bottom, #4286f4, #8d32f4);
+    color: white;
+    height: 5vh;
+    width: 100%;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+
+.titletext{
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-left: 60px;
+}
+
+.titlebtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
